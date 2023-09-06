@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 150vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url('https://raw.githubusercontent.com/devngc/war/master/images/table.png');
+ background-repeat: no-repeat;
+ background-size: cover;
+
+
+}
+
+body,
+button {
+  font-size: 1rem;
+  font-family: 'Inter', sans-serif;
+  color: white;
+  text-align: center;
+}
+
+main {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+h1 {
+  margin-bottom: 0.25rem;
+}
+
+.cards-container {
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+
+.cards {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.score {
+  margin: 1.25em 0;
+}
+
+.card:last-child {
+  margin-top: 0.5em;
+}
+
+.card {
+  height: 50%;
+}
+
+.card img {
+height: 100%;
+}
+
+button {
+  color: black;
+  cursor: pointer;
+  background: yellow;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5em 1em;
+  margin: 0.5em 0;
+  width: 160px;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  background-color: white;
+}
+
+@media screen and (max-width: 550px) {
+  body {
+    width: 100vw;
+    height: 200vh;
+    margin: 0;
+  }
+
+  main {
+    width: 90%;
+    height: 100%;
+  }
+}
